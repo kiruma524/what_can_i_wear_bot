@@ -84,7 +84,7 @@ def step_four(call):
                     bot.send_photo(id1, 'https://drive.google.com/file/d/13zNR0XTP85I7nEmrFw2G7jXSfmpf2W5t/view')
                 elif ("обла" in cloud.lower()):
                     bot.send_message(id1, 'Сегодня облачно. Честно, делай, как знаешь: хочешь - бери зонт, не хочешь - не бери🌥')
-                elif ("ясн" in cloud.lower()) or ("солн" in cloud.lower()):
+                elif ("ясным" in cloud.lower()) or ("солн" in cloud.lower()) or ("ясно " in cloud.lower()):
                     bot.send_message(id1, 'Позаботься о глазках и надень очки, котенок😎')
                     bot.send_photo(id1, 'https://drive.google.com/file/d/1t-dmrgW8fMt_cfEv-XzCRMjBKXrzGeJ6/view?usp=sharing')
             elif call.data == 'clouds':

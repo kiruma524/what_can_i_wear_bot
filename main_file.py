@@ -18,7 +18,7 @@ def start(message):
 
 @bot.message_handler(content_types=['text'])
 def place(message):
-    town = message.text
+    town = message.text.replace(" ", "-", 2)
     url = 'https://sinoptik.com.ru/%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-' + town.lower()
     r = requests.get(url)
     soup = BeautifulSoup(r.text, 'html.parser')

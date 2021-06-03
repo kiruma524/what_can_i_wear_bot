@@ -4,7 +4,7 @@ import time
 from bs4 import BeautifulSoup
 from telebot import types
 
-TOKEN = "1740563390:AAHFIQtOI7Zd7DBRPk4XAX5Ke3oMuXbRG3c"
+TOKEN = <token>
 
 bot = telebot.TeleBot(TOKEN)
 
